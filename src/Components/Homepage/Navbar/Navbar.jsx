@@ -12,6 +12,9 @@ const Navbar = () => {
 
   const handleAdmissionNav = () => {
     setAdmissionsNav(!admissionsNav);
+    if (aboutNav === true) {
+      setAboutNav(false);
+    }
   };
 
   const handleNav = () => {
@@ -24,6 +27,9 @@ const Navbar = () => {
 
   const handleAboutnav = () => {
     setAboutNav(!aboutNav);
+    if (admissionsNav === true) {
+      setAdmissionsNav(false);
+    }
   };
 
   return (
