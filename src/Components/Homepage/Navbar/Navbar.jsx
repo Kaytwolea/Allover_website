@@ -6,9 +6,24 @@ import { IconContext } from "react-icons";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [mobileextraNav, setMobileextraNav] = useState(false);
+  const [aboutNav, setAboutNav] = useState(false);
+  const [admissionsNav, setAdmissionsNav] = useState(false);
+
+  const handleAdmissionNav = () => {
+    setAdmissionsNav(!admissionsNav);
+  };
 
   const handleNav = () => {
     setNav(!nav);
+  };
+
+  const handleMobileNav = () => {
+    setMobileextraNav(!mobileextraNav);
+  };
+
+  const handleAboutnav = () => {
+    setAboutNav(!aboutNav);
   };
 
   return (
@@ -46,16 +61,64 @@ const Navbar = () => {
                 <li className="font-bold border-b-4 border-b-[#61ba6d]">
                   <NavLink to="/">Home</NavLink>
                 </li>
-                <li>
-                  <NavLink to="/vision">About</NavLink>
+                <li onClick={handleAboutnav}>
+                  <NavLink>About</NavLink>
                 </li>
+                {aboutNav ? (
+                  <div className="h-32 w-52 bg-white mt-10 absolute px-4 py-6 space-y-4">
+                    <div>
+                      <NavLink
+                        to="/about"
+                        className="uppercase text-base text-black font-normal border-b-2 border-b-[#6EBD55]"
+                      >
+                        About the school
+                      </NavLink>{" "}
+                    </div>
+                    <div>
+                      <NavLink
+                        to="/vision"
+                        className="uppercase text-base text-black font-normal border-b-2 border-b-[#6EBD55] pt-4"
+                      >
+                        our vision
+                      </NavLink>
+                    </div>
+                  </div>
+                ) : null}
 
                 <li>
                   <a>Courses offered</a>
                 </li>
-                <li>
-                  <a>admissions</a>
+                <li onClick={handleAdmissionNav}>
+                  <NavLink>admissions</NavLink>
                 </li>
+                {admissionsNav ? (
+                  <div className="h-36 w-56 bg-white mt-10 absolute right-[10rem] space-y-4 pl-2 py-4">
+                    <div>
+                      <NavLink
+                        to="/about"
+                        className="uppercase text-base text-black font-normal border-b-2 border-b-[#6EBD55]"
+                      >
+                        Diploma
+                      </NavLink>{" "}
+                    </div>
+                    <div>
+                      <NavLink
+                        to="/vision"
+                        className="uppercase text-base text-black font-normal border-b-2 border-b-[#6EBD55]"
+                      >
+                        National Diploma
+                      </NavLink>
+                    </div>
+                    <div>
+                      <NavLink
+                        to="/vision"
+                        className="uppercase text-base text-black font-normal border-b-2 border-b-[#6EBD55] whitespace-nowrap"
+                      >
+                        Higher National Diploma
+                      </NavLink>
+                    </div>
+                  </div>
+                ) : null}
                 <li>
                   <a>news</a>
                 </li>
@@ -71,28 +134,41 @@ const Navbar = () => {
           <ul
             className={
               nav
-                ? "fixed right-0 top-0 w-[75%] h-full mt-14  navbar-main ease-in-out duration-500 space-y-4 capitalize px-4 pt-10"
+                ? "fixed right-0 top-0 w-[75%] h-full mt-14  navbar-main ease-in-out duration-500 space-y-4 capitalize px-4 pt-10 text-xl text-white font-semibold "
                 : "ease-in-out duration-500 fixed left-[-100%]"
             }
           >
-            <li className="font-bold text-xl text-white">Home</li>
-            <li className="text-xl text-white font-semibold ">
-              <NavLink to="/about">About</NavLink>
+            <li className="">
+              <NavLink to="/">Home</NavLink>
             </li>
+            <li onClick={handleMobileNav} className="">
+              <NavLink>About</NavLink>
+            </li>
+            {mobileextraNav ? (
+              <div>
+                <NavLink to="/about" className="pl-4">
+                  About us
+                </NavLink>{" "}
+                <br />
+                <NavLink to="/vision" className="pl-4">
+                  our vision
+                </NavLink>
+              </div>
+            ) : null}
 
-            <li className="text-xl text-white font-semibold ">
+            <li className="">
               <a>Courses offered</a>
             </li>
-            <li className="text-xl text-white font-semibold ">
+            <li className="">
               <a>admissions</a>
             </li>
-            <li className="text-xl text-white font-semibold ">
+            <li className="">
               <a>news</a>
             </li>
-            <li className="text-xl text-white font-semibold ">
+            <li className="">
               <a>events</a>
             </li>
-            <li className="text-xl text-white font-semibold ">
+            <li className="">
               <a>contact us</a>
             </li>
           </ul>

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { lazy } from "react";
 import Homepage from "./Components/Homepage/Homepage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./Components/About/AboutUs";
 import Vision from "./Components/About/Vision/Vision";
+
+// const Homepage = React.lazy(() => import("./Components/Homepage/Homepage"));
+// const AboutUs = React.lazy(() => import("./Components/About/AboutUs"));
+// const Vision = React.lazy(() => import("./Components/About/Vision/Vision"));
 
 function App() {
   return (
