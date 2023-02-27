@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-head {
+  background: linear-gradient(90.28deg, #61ba6d -0.76%, #81c234 104.45%);
+}
+.navbar-main {
+  background: rgba(11, 13, 15, 0.9);
+  box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.25);
+}
+.hero-main {
+  background: radial-gradient(
+      65% 379.44% at 74.58% 50%,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("./images/herobg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.numbers-bg {
+  background: rgba(126, 193, 57, 0.2);
+}
+.about-button {
+  background: linear-gradient(90.28deg, #61ba6d -0.76%, #81c234 104.45%);
+  border-radius: 6px;
+}
+.courses-card {
+  box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.schools-bg {
+  background: url("./images/schoolbgleft.png"),
+    url("./images/schoolbgright.png");
+  background-position: left, right;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.newscard-bg1 {
+  background: linear-gradient(
+      0deg,
+      rgba(37, 74, 42, 0.3),
+      rgba(37, 74, 42, 0.3)
+    ),
+    url("./images/newsbg1.png") no-repeat;
+  background-size: cover;
+}
+.newscard-bg2 {
+  background: linear-gradient(
+      0deg,
+      rgba(37, 74, 42, 0.3),
+      rgba(37, 74, 42, 0.3)
+    ),
+    url("./images/newsbg2.png") no-repeat;
+  background-size: cover;
+}
+.newscard2-bg1 {
+  background: url(./images/newscard2bg1.png), rgba(37, 74, 42, 0.8);
+  box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
+  background-size: cover;
+}
+.newscard2-bg2 {
+  background: url(./images/newscard2bg2.png), rgba(37, 74, 42, 0.8);
+  box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
+  background-size: cover;
+}
+.newscard2-bg3 {
+  background: url(./images/newscard2bg3.png), rgba(37, 74, 42, 0.8);
+  box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
+  background-size: cover;
+}
+.newscard2-bg4 {
+  background: url(./images/newscard2bg4.png), rgba(37, 74, 42, 0.8);
+  box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
+  background-size: cover;
+}
+.admission-home {
+  background: url(./images/admissionbg.png), #d9d9d9;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.eventcard-bg1 {
+  background: url("./images/eventbg11.png"), rgba(37, 74, 42, 0.8);
+  box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.eventcard-bg2 {
+  background: url("./images/eventbg2.png"), rgba(37, 74, 42, 0.8);
+  box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.eventcard-bg3 {
+  background: url("./images/eventbg3.png"), rgba(37, 74, 42, 0.8);
+  box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.eventcard-bg4 {
+  background: url("./images/eventbg4.png"), rgba(37, 74, 42, 0.8);
+  box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

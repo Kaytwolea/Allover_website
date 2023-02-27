@@ -1,0 +1,11 @@
+.visionherobg {
+  background: radial-gradient(
+      65% 379.44% at 74.58% 50%,
+      rgba(45, 51, 46, 0.2) 0%,
+      rgba(88, 171, 100, 0.5) 100%
+    ),
+    url('./images/visionherobg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
