@@ -12,6 +12,12 @@
 }
 /* Navbar-styles-end */
 
+/* Numbers-section-style */
+
+.numbers-bg {
+  background: rgba(126, 193, 57, 0.2);
+}
+
 /* Homepage-Hero */
 .hero-main {
   background: radial-gradient(

@@ -3,7 +3,7 @@ import React from "react";
 const Numbers = () => {
   return (
     <div>
-      <div className="w-full h-24 bg-[#7ec139] lg:flex hidden justify-center items-center gap-20">
+      <div className="w-full h-24 numbers-bg lg:flex hidden justify-center items-center gap-20">
         <div className="flex gap-8">
           <img src="./images/courses.svg" alt="" />
           <div>
