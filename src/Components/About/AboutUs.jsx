@@ -1,5 +1,7 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import Homepage from "../Homepage/Homepage";
 import Navbar from "../Homepage/Navbar/Navbar";
 import NavbarHead from "../Homepage/Navbar/NavbarHead";
 import "./About.css";
