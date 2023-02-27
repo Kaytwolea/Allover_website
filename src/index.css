@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navbar-styles */
 .navbar-head {
   background: linear-gradient(90.28deg, #61ba6d -0.76%, #81c234 104.45%);
 }
@@ -9,41 +10,49 @@
   background: rgba(11, 13, 15, 0.9);
   box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.25);
 }
+/* Navbar-styles-end */
+
+/* Homepage-Hero */
 .hero-main {
   background: radial-gradient(
       65% 379.44% at 74.58% 50%,
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.7) 100%
     ),
-    url("./images/herobg.svg");
+    url("./assets/backgrounds/herobg.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
-.numbers-bg {
-  background: rgba(126, 193, 57, 0.2);
-}
+
+/* about-learn-more-btn */
 .about-button {
   background: linear-gradient(90.28deg, #61ba6d -0.76%, #81c234 104.45%);
   border-radius: 6px;
 }
+
+/* Courses-section */
 .courses-card {
   box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
+/* Schools-section-bg */
 .schools-bg {
-  background: url("./images/schoolbgleft.png"),
-    url("./images/schoolbgright.png");
+  background: url("./assets/backgrounds/schoolbgleft.png"),
+    url("./assets/images/schoolbgright.png");
   background-position: left, right;
   background-repeat: no-repeat;
   background-size: auto;
 }
+
+/* Newscard-backgrounds */
 .newscard-bg1 {
   background: linear-gradient(
       0deg,
       rgba(37, 74, 42, 0.3),
       rgba(37, 74, 42, 0.3)
     ),
-    url("./images/newsbg1.png") no-repeat;
+    url("./assets/backgrounds/newsbg1.png") no-repeat;
   background-size: cover;
 }
 .newscard-bg2 {
@@ -52,60 +61,122 @@
       rgba(37, 74, 42, 0.3),
       rgba(37, 74, 42, 0.3)
     ),
-    url("./images/newsbg2.png") no-repeat;
+    url("./assets/backgrounds/newsbg2.png") no-repeat;
   background-size: cover;
 }
 .newscard2-bg1 {
-  background: url(./images/newscard2bg1.png), rgba(37, 74, 42, 0.8);
+  background: url("./assets/backgrounds/newscard2bg1.png"),
+    rgba(37, 74, 42, 0.8);
   box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
   background-size: cover;
 }
 .newscard2-bg2 {
-  background: url(./images/newscard2bg2.png), rgba(37, 74, 42, 0.8);
+  background: url("./assets/backgrounds/newscard2bg2.png"),
+    rgba(37, 74, 42, 0.8);
   box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
   background-size: cover;
 }
 .newscard2-bg3 {
-  background: url(./images/newscard2bg3.png), rgba(37, 74, 42, 0.8);
+  background: url("./assets/backgrounds/newscard2bg3.png"),
+    rgba(37, 74, 42, 0.8);
   box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
   background-size: cover;
 }
 .newscard2-bg4 {
-  background: url(./images/newscard2bg4.png), rgba(37, 74, 42, 0.8);
+  background: url("./assets/backgrounds/newscard2bg4.png"),
+    rgba(37, 74, 42, 0.8);
   box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
   background-size: cover;
 }
+
+/* Newscard-backgrounds-end */
+
+/* Admission-section-styles */
 .admission-home {
-  background: url(./images/admissionbg.png), #d9d9d9;
+  background: url("./assets/backgrounds/admissionbg.png"), #d9d9d9;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
+/* Event-cards-styles */
 .eventcard-bg1 {
-  background: url("./images/eventbg11.png"), rgba(37, 74, 42, 0.8);
+  background: url("./assets/backgrounds/eventbg11.png"), rgba(37, 74, 42, 0.8);
   box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .eventcard-bg2 {
-  background: url("./images/eventbg2.png"), rgba(37, 74, 42, 0.8);
+  background: url("./assets/backgrounds/eventbg2.png"), rgba(37, 74, 42, 0.8);
   box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .eventcard-bg3 {
-  background: url("./images/eventbg3.png"), rgba(37, 74, 42, 0.8);
+  background: url("./assets/backgrounds/eventbg3.png"), rgba(37, 74, 42, 0.8);
   box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .eventcard-bg4 {
-  background: url("./images/eventbg4.png"), rgba(37, 74, 42, 0.8);
+  background: url("./assets/backgrounds/eventbg4.png"), rgba(37, 74, 42, 0.8);
   box-shadow: 0px 20px 24px -32px rgba(1, 71, 0, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Event-cards-styling-end */
+
+/* Aboutpage-styles */
+.aboutherobg {
+  background: radial-gradient(
+      65% 379.44% at 74.58% 50%,
+      rgba(6, 9, 7, 0.2) 0%,
+      rgba(97, 186, 109, 0.5) 100%
+    ),
+    url("./assets/backgrounds/aboutusbg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about-container {
+  background: url("./assets/backgrounds/aboutcontainer.png"),
+    rgba(37, 74, 42, 0.8);
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+.aboutsection2 {
+  background: radial-gradient(
+    65% 379.44% at 74.58% 50%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.48) 100%
+  );
+}
+.aboutsection3 {
+  background: linear-gradient(
+      0deg,
+      rgba(97, 186, 109, 0.3),
+      rgba(97, 186, 109, 0.3)
+    ),
+    url("./assets/backgrounds/aboutsection3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Visionpage-styles */
+.visionherobg {
+  background: radial-gradient(
+      65% 379.44% at 74.58% 50%,
+      rgba(45, 51, 46, 0.2) 0%,
+      rgba(88, 171, 100, 0.5) 100%
+    ),
+    url("./assets/backgrounds/visionherobg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }

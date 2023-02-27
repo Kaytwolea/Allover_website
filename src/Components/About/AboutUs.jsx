@@ -4,7 +4,6 @@ import Footer from "../Footer/Footer";
 import Homepage from "../Homepage/Homepage";
 import Navbar from "../Homepage/Navbar/Navbar";
 import NavbarHead from "../Homepage/Navbar/NavbarHead";
-import "./About.css";
 import AboutHero from "./AboutHero";
 import AboutMain from "./AboutMain";
 import AboutSection1 from "./AboutSection1";
